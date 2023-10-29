@@ -1,0 +1,21 @@
+main {
+    display: flex;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+    color: red;
+}
+
+
+#search-aside {
+    display: wrap;
+    padding: 10px;
+    
+}
+
+.fiveDay {
+    display: wrap;
+}

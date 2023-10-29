@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
     <header>
@@ -12,13 +13,15 @@
         </h1>
     </header>
     <main>
-        <aside>
-            <label for="city-serach">Search for a city:</label>
-            <input type="search" id="city-search"/>
-            <button>Search</button>
+        <aside id="search-aside">
+            <label for="location">Search for a city:</label><br>
+            <input type="search" id="location"/><br>
+            <button id="searchBtn">Search</button>
         </aside>
-        <div id="weather-report">Weather Report</div>
-        <article id="five-day">5 day forecast</article>
+        <div class="fiveDay" id="weather-report">Weather Report</div>
+        <br>
+        <article class="fiveDay" id="five-day">5 day forecast</article>
     </main>
+    <script src="./assets/script.js"></script>
 </body>
 </html>
