@@ -1,5 +1,11 @@
 var forecastList = document.getElementById('forecast')
 
+const history = document.createElement('li')
+var cityHistory = document.getElementById('cityHistory')
+history.textContent = localStorage.getItem("city")
+
+cityHistory.appendChild(history);
+
 document.getElementById('searchBtn').addEventListener('click', function() {
     var location = document.getElementById('location').value;
     if (location !== '') {
@@ -29,6 +35,7 @@ document.getElementById('searchBtn').addEventListener('click', function() {
                     const day = document.createElement('li');
                     day.textContent = `City Name: ${location} Date: ${response.dt_txt} Icon: ${weatherIcon} Temp: ${response.main.temp} Humidity: ${response.main.humidity} Wind:${response.wind.speed}`;
                     forecastList.appendChild(day);
+                    localStorage.setItem(`${location}`, `${response.main.temp}`)
                     console.log(day);
                     
             });    
@@ -36,7 +43,8 @@ document.getElementById('searchBtn').addEventListener('click', function() {
         
         });
         
+    
             
     }
-})
+});
 
