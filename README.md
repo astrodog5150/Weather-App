@@ -3,7 +3,7 @@ uses Weather API to show weather statistics
 
 # How to use
 access this link: 
-
+https://astrodog5150.github.io/Weather-App/
 to navigate to the page, then type in the city you want the weather for
 
 # License
